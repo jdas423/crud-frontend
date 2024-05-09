@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family:"roboto" ;
+    src: url("./assets/Roboto_Condensed/static/RobotoCondensed-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "lato";
+    src: url("./assets/Lato/Lato-Regular.ttf") format("truetype");
+}
+
+.register-form{
+    font-family: "lato", sans-serif;
+}

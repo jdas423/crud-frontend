@@ -1,0 +1,25 @@
+.fade-in{
+   transform:scale(1) !important;
+   transition: all 0.7s ease-in-out ;
+}
+
+.fade-out{
+    transform:scale(0) !important;
+    transition: all 0.7s ease-in-out;
+}
+
+.flex-custom{
+    display:flex !important;
+}
+
+.none-custom{
+    display:none !important;
+}
+
+.add-left-border{
+    border-left-width:2px;
+}
+
+.remove-left-border{
+    border-left-width:0px;
+}

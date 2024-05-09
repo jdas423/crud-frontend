@@ -1,0 +1,19 @@
+.login-form label{
+    @apply my-[3px] w-full flex items-center justify-center flex-col bg-dark-blue py-[5px] border-l-[5px] border-solid border-l-dark-blue;
+}
+
+.login-form span{
+    @apply block w-[80%]  text-[12px];
+}
+
+.login-form input,.login-form select{
+    @apply w-[80%] block bg-dark-blue border-none outline-none p-[5px] text-[1rem];
+}
+
+.login-form .file-input{
+    @apply text-white;
+}
+
+.login-form button{
+    @apply py-[10px] px-[31px]  bg-deeppink rounded-[10px] mt-[15px] self-start ml-[10px];
+}
