@@ -34,7 +34,7 @@ export default function FundraiserCard({title,author,supporters,assignedDate,goa
     return(
          <div className="fundraisercard flex flex-col justify-center items-start rounded-[10px] bg-dark-blue text-[1.5rem] hover:scale-[1.02] transition-transform duration-[1] ease-linear cursor-pointer"
          onMouseEnter={()=>setHover(true)} onMouseLeave={()=>setHover(false)}>
-            <div className="img-container w-full h-[350px] bg-center bg-cover bg-no-repeat rounded-[10px]" style={{backgroundImage:`url(/public/images/fundraiser${id}.jpg)`}}>
+            <div className="img-container w-full h-[350px] bg-center bg-cover bg-no-repeat rounded-[10px]" style={{backgroundImage:`url(/images/fundraiser${id}.jpg)`}}>
             </div>
             <div className="title w-[90%] mt-[25px] text-[1.8rem] leading-[40px] ml-[20px] mr-0 mb-[10px] max-md:text-[25px]">
                  {title.length>40?title.substring(0,40)+"...":title}

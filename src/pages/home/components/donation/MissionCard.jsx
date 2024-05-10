@@ -17,7 +17,7 @@ export default function MissionCard({ bgImg, title, percent, text, supporters })
      text-white  hover:scale-[1.05] transition-transform duration-[0.5s] ease-in-out cursor-pointer"   onMouseEnter={showFunc} onMouseLeave={hideFunc} >
       <div
         className={` bg-center bg-cover bg-no-repeat rounded-[10px] w-full aspect-[400/250]  `}
-        style={{ backgroundImage: `url(/public/images/${bgImg}.jpg)` }}
+        style={{ backgroundImage: `url(/images/${bgImg}.jpg)` }}
       >
         <div className="flex justify-end items-start flex-col rounded-[10px] w-full h-full bg-gradient-to-t from-black via-transparent to-transparent text-white">
           <div className="ml-[15px] italic text-[25px] max-lg:text-[40px] max-lg:ml-[20px] max-sm:text-[25px]">
