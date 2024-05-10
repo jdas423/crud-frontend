@@ -4,7 +4,7 @@ import { slideshow } from "./slideshowobj";
 export default function SlideshowCont({title,description,imgTitle,id}){
     const className="absolute top-0 w-full h-full min-h-[390px] text-light-blue flex justify-start items-center  bg-center bg-no-repeat bg-cover slideshowcont transition-all linear duration-1000";
     return(
-        <div style={{backgroundImage:`url(./src/images/${imgTitle}.jpg)`, left:id===slideshow.length?`-100vw`:`${(id-1)*window.innerWidth}px`, zIndex:id===slideshow.length?-50:50}} className={id===1? (className+" active" ): className}>
+        <div style={{backgroundImage:`url(/images/${imgTitle}.jpg)`, left:id===slideshow.length?`-100vw`:`${(id-1)*window.innerWidth}px`, zIndex:id===slideshow.length?-50:50}} className={id===1? (className+" active" ): className}>
             <div className="flex justify-center items-center bg-gradient-to-r from-white to-transparent w-full h-full">
                 <div className="w-full lg:w-[1280px] flex justify-start items-center ">
                 <article className="w-[35%] min-w-[390px] h-[100%] flex flex-col justify-center items-start ml-[80px] lg:ml-[50px] max-sm:ml-[30px]"> 
