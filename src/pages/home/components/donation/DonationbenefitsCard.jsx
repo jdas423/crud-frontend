@@ -9,8 +9,8 @@ export default function DonationbenefitsCard({heading,topic,border}){
             <TaskAltIcon style={{color:"deeppink",marginRight:"10px"}}/>
         </div>
         <div>
-          <h3 className='text-[20px] font-bold mb-[7px]'>{heading}</h3>
-          <p className='text-[18px]'> {topic}</p>
+          <h3 className='text-[20px] font-bold mb-[7px] max-sm:text-[16px]'>{heading}</h3>
+          <p className='text-[18px] max-sm:text-[13px]'> {topic}</p>
         </div>
       </div>
     )

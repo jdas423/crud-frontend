@@ -13,7 +13,7 @@ export default function Whodonated(){
                     <div className='logo pr-[10px] text-deeppink'>
                          <AcUnitIcon/>
                     </div>
-                    <div className='text-[20px] leading-[30px]'>
+                    <div className='text-[20px] leading-[30px] max-sm:text-[14px]'>
                         <span>{`${obj.name} just donated`}</span>
                          <span className='text-deeppink'> {`₹${obj.donated}`}</span>
                     </div>

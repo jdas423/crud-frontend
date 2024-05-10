@@ -74,7 +74,7 @@ export default function Slideshow() {
 
     return(
         <>
-       <section className="slideshow w-full h-[35vw] min-h-[390px] relative overflow-hidden">
+       <section className="slideshow w-full h-[35vw] min-h-[390px] relative overflow-hidden max-sm:h-[580px]">
          {
             slideshow.map((slideshow)=>{
                 return <SlideshowCont key={slideshow.id} id={slideshow.id} title={slideshow.title} description={slideshow.description} imgTitle={slideshow.image} />

@@ -19,10 +19,10 @@ export default function Home(){
             <section className='flex w-full justify-center items-center'>
                <Donation/>
             </section>
-            <section className="w-full py-[40px] flex justify-center items-center h-[170px]">
+            <section className="w-full py-[40px] flex justify-center items-center h-[170px] ">
                 <Whodonated/>
             </section>
-            <section className="w-full py-[40px] flex justify-center items-center">
+            <section className="w-full py-[40px] flex justify-center items-center max-sm:mt-[-20px] ">
                  <Fundraiser/>
             </section>
         </main>
