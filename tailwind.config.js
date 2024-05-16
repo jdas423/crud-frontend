@@ -3,14 +3,16 @@ export default {
   content: ["index.html","./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      backgroundImage:{
-        'bg-img': "url('/images/bg.jpg')",
-      },
       colors:{
-        "dark-blue":"#2d3250",
-        "light-blue":"#424769",
-        "deeppink":"deeppink",
-      }
+        "green-variant":"#6EEB83",
+        "black-variant":"#F5F5F5",
+      },
+       screens:{
+           "extrasm": "500px",
+      },
+      height:{
+           "customH":"650px"
+      }    
     },
   },
   plugins: [],
