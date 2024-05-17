@@ -5,7 +5,7 @@ import Signin from "./Signin";
 import Signup from "./Signup";
 import Mobilemenu from "./Mobilemenu";
 import { useLocation,useNavigate } from "react-router-dom";
-import { useReducer } from "react";
+import { useReducer, useEffect, useCallback } from "react";
 
 const reducer=(state,{type,value})=>{
   switch(type){
@@ -34,12 +34,15 @@ export default function Navbar({setLocate,locate}){
     const handlePageChange=()=>{
       console.log(locate)
       console.log(location.pathname)
-      if(location.pathname!==locate){
-          navigate(locate);
+      if(location.pathname!==locate && locate){
+          return navigate(locate);
       }
     }
 
-    handlePageChange();
+    useEffect(()=>{
+      handlePageChange();
+    },[locate])
+   
     
     
     return(
@@ -59,12 +62,14 @@ export default function Navbar({setLocate,locate}){
                 </ul>
                 <ul className="buttons flex justify-content items-center gap-[10px]">
                    <li className="signup max-sm:hidden" key="signup">
-                       <button onClick={()=>dispatch({type:"setSignUpShow",value:true})}>
+                       <button onClick={()=>{dispatch({type:"setSignUpShow",value:true});
+                         setLocate(location.pathname)}}>
                           Sign Up
                        </button>
                    </li>
                    <li className="signin max-sm:hidden" key="signin">
-                     <button onClick={()=>{dispatch({type:"setSignInShow",value:true})}}>
+                     <button onClick={()=>{dispatch({type:"setSignInShow",value:true});
+                    setLocate(location.pathname)}}>
                           Sign In
                        </button>
 

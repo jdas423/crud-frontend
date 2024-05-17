@@ -6,6 +6,7 @@ import { useState } from "react";
 
 export default function Navbaroutlet(){
     const [locate,setLocate]=useState("");
+        console.log(locate)
         return(
         <>
         <Navbar locate={locate} setLocate={setLocate}/>
